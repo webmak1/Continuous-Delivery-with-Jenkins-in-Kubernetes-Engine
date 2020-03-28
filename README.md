@@ -290,10 +290,15 @@ You have successfully created a Jenkins pipeline! Next, you'll create the develo
 
     $ git checkout -b new-feature
 
+<br/>
+
 
     $ vi Jenkinsfile
 
 REPLACE_WITH_YOUR_PROJECT_ID - qwiklabs-gcp-00-5d7bec341228
+
+
+<br/>
 
     $ vi html.go
 
@@ -305,11 +310,17 @@ on
 
     <div class="card red">
 
+<br/>
+
     $ vi main.go
 
-const version string = "1.0.0"
+<br/>
 
-const version string = "2.0.0"
+    const version string = "1.0.0"
+
+on
+
+    const version string = "2.0.0"
 
 
 <br/>
