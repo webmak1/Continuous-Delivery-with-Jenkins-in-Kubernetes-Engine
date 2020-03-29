@@ -180,6 +180,12 @@ You will deploy the application into two different environments:
 
 It can take several minutes before you see the load balancer external IP address.
 
+<br/>
+
+    $ for i in `seq 1 5`;do kubectl --namespace=production get service gceme-frontend; sleep 60;done
+
+<br/>
+
     $ kubectl get service gceme-frontend -n production
     NAME             TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)        AGE
     gceme-frontend   LoadBalancer   10.35.249.249   35.231.32.131   80:30285/TCP   2m43s
